@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spotify Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container"> <!-- Container 1 -->
+    <div class="row"> <!-- Row 1 -->
+      <div class="col-md-12 jumbotron text-center"> <!-- Column 1 -->
+        <h1>Spotify Analysis</h1>
+        <p>Final Project</p>
+      </div> <!-- Column 1 Close -->
+    </div> <!-- Row 1 Close -->
+
+    <div class="row"> <!-- Row 2 -->
+      <div class="col-md-2"> <!-- Column 2.1 -->
+
+        <div id="div">
+            <label for="input_box">Enter URL: </label><input type="text" id="input_box" name="input_box" value="Enter URL Here"/>
+            <p><a class="btn btn-primary btn-lg" style="background-color: #28a745; border: 0px;" href="http://127.0.0.1:5000/scrape" role="button">Click Here!</a></p>
+        </div>
+        <br>
+
+
+      <div class="col-md-5"> <!-- Column 2.2 -->
+        <div id="pie"></div>
+      </div> <!-- Column 2.2 Close -->
+
+      <div class="col-md-5"> <!-- Column 2.3 -->
+        <div id="gauge"></div>
+      </div> <!-- Column 2.3 Close -->
+
+    </div> <!-- Row 2 Close -->
+  </div> <!-- Container 1 Close -->
+
+
+  </div> <!-- Container 2 Close -->
+
+  <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/app.js"></script>
+
+</body>
+
+</html>
